@@ -9,7 +9,7 @@ const port = 3000;
 
 // 3. Define a simple HTTP request
 app.get('/', (req, res) => {
-        res.send('Hello!');
+        res.send('Hello World!');
 });
 
 // 4. Instruct the express app to listen on port 3000
