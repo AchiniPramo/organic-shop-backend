@@ -8,7 +8,7 @@
     "build": "tsc",
     "serve": "node dist/index.js"
   },
-  "keywords": [],
+  "keyword s": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
