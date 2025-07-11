@@ -1,22 +1,13 @@
-import express, {Express, Request, Response} from 'express';
-import productRoutes from "./routes/product.routes";
-import cors from "cors";
-import contactRoutes from "./routes/contact.routes";
+import express, { Express } from 'express';
+import cors from 'cors';
+import productRoutes from './routes/product.routes';
+import contactRoutes from './routes/contact.routes';
 
+const app: Express = express();
 
-
-// 1. Initialize the Express App
-const app = express();
-
-// 2. Define Middlewares
-/*Instruct to parse the request
-payload data to be converted to JSON format*/
 app.use(express.json());
 
-const allowedOrigins = [
-    'http://localhost:5173'
-];
-// app.use(cors());// Enable/Allow CORS here
+const allowedOrigins = ['http://localhost:5173'];
 
 const corsOptions = {
     origin: (origin: string | undefined, callback: (error: Error | null, allow?: boolean) => void) => {
@@ -25,16 +16,14 @@ const corsOptions = {
         } else {
             callback(new Error('Not allowed by CORS'));
         }
-    }
+    },
 };
 
-app.use("/api/products", productRoutes);
-app.use("/api/contacts", contactRoutes);
+// ✅ Enable CORS
+app.use(cors(corsOptions));
 
-// 3. Define a simple HTTP request
-/*app.get('/', (req, res) => {
-    console.log(req.body);
-    res.send('Hello World!');
-});*/
+// ✅ Register routes
+app.use('/api/products', productRoutes);
+app.use('/api/contacts', contactRoutes);
 
-export default app
+export default app;
