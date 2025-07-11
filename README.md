@@ -40,15 +40,13 @@ Server will start on:
 ```
 http://localhost:3000
 ```
-හරි Achini! මෙන්න ඔබේ GitHub README එකට add කරන්න පුළුවන් විදිහට ලස්සන 🔗 **Postman Collection** section එක:
-
 ---
 
 ## 🔗 Postman Collection
 
 📥 **Download and Import the Postman Collection**
 
-- 📬 [Postman Collection](./organic-shop-backent.postman_collection.json)  
+- 📬 [Postman Collection](./organic-shop-backend.organic_shop_backend_postman_collection.json)  
 ---
 
 ## 🌐 CORS Configuration
