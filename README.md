@@ -44,9 +44,8 @@ http://localhost:3000
 
 ## 🔗 Postman Collection
 
-📥 **Download and Import the Postman Collection**
-
-- 📬 [Postman Collection](./organic-shop-backend.organic_shop_backend_postman_collection.json)  
+- 📬 [Postman Collection](./organic_shop_backend.postman_collection.json)
+  
 ---
 
 ## 🌐 CORS Configuration
